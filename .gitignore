@@ -1,0 +1,8 @@
+# Ignore venvs, logs, and system files
+__pycache__/
+*.pyc
+.env
+logs/
+.DS_Store
+Thumbs.db
+docs/
