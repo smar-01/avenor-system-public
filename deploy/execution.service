@@ -1,0 +1,17 @@
+# /deploy/execution.service
+
+[Unit]
+Description=Avenor Trading Bot - Execution Pillar
+After=network.target
+
+[Service]
+# The command points to the execution service module.
+ExecStart=[[...]]
+
+WorkingDirectory=[[...]]
+Restart=on-failure
+Type=notify
+WatchdogSec=30
+
+[Install]
+WantedBy=default.target

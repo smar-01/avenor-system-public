@@ -1,0 +1,17 @@
+# /deploy/strategy.service
+
+[Unit]
+Description=Avenor Trading Bot - Strategy Pillar
+
+After=network.target
+
+[Service]
+ExecStart=[[...]]
+
+WorkingDirectory=[[...]]
+Restart=on-failure
+Type=notify
+WatchdogSec=30
+
+[Install]
+WantedBy=default.target

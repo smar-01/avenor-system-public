@@ -1,0 +1,16 @@
+# ZeroMQ for messaging
+pyzmq
+
+# Modern PostgreSQL database driver
+psycopg
+
+# For loading the .env configuration file
+python-dotenv
+
+# For notifying systemd
+sdnotify
+
+# Testing framework
+pytest
+pytest-mock
+

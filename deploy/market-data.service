@@ -1,0 +1,19 @@
+# /deploy/market-data.service
+
+[Unit]
+Description=Avenor Trading Bot - Market Data Pillar
+
+[Service]
+ExecStart=[[...]]
+
+WorkingDirectory=[[...]]
+
+Restart=on-failure
+
+Type=notify
+WatchdogSec=30
+
+[Install]
+# This tells systemd to hook this service into the default startup process for user.
+# When log in, this service will be started automatically.
+WantedBy=default.target

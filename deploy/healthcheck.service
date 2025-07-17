@@ -1,0 +1,15 @@
+# /deploy/healthcheck.service
+
+[Unit]
+Description=Avenor Trading Bot - Healthcheck Monitor
+After=network.target
+
+[Service]
+ExecStart=[[...]]
+
+WorkingDirectory=[[...]]
+Restart=on-failure
+Type=simple
+
+[Install]
+WantedBy=default.target

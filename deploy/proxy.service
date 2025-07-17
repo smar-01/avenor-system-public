@@ -1,0 +1,15 @@
+# /deploy/proxy.service
+
+[Unit]
+Description=Avenor Trading Bot - ZeroMQ Message Bus Proxy
+# This should start before any of the other pillars.
+After=network.target
+
+[Service]
+ExecStart=[[...]]
+WorkingDirectory=[[...]]
+Restart=on-failure
+Type=simple
+
+[Install]
+WantedBy=default.target
